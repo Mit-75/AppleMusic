@@ -13,6 +13,8 @@
 		335D219E2B7792D6005C61EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335D219C2B7792D6005C61EC /* Main.storyboard */; };
 		335D21A02B7792D9005C61EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335D219F2B7792D9005C61EC /* Assets.xcassets */; };
 		335D21A32B7792D9005C61EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335D21A12B7792D9005C61EC /* LaunchScreen.storyboard */; };
+		335D21AC2B779366005C61EC /* MusicFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335D21AB2B779366005C61EC /* MusicFeed.swift */; };
+		335D21AF2B779A0C005C61EC /* NetworkManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335D21AE2B779A0C005C61EC /* NetworkManeger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		335D219F2B7792D9005C61EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		335D21A22B7792D9005C61EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		335D21A42B7792D9005C61EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335D21AB2B779366005C61EC /* MusicFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeed.swift; sourceTree = "<group>"; };
+		335D21AE2B779A0C005C61EC /* NetworkManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManeger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		335D21952B7792D6005C61EC /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
-				335D21962B7792D6005C61EC /* AppDelegate.swift */,
-				335D21982B7792D6005C61EC /* SceneDelegate.swift */,
-				335D219A2B7792D6005C61EC /* ViewController.swift */,
-				335D219C2B7792D6005C61EC /* Main.storyboard */,
-				335D219F2B7792D9005C61EC /* Assets.xcassets */,
-				335D21A12B7792D9005C61EC /* LaunchScreen.storyboard */,
-				335D21A42B7792D9005C61EC /* Info.plist */,
+				335D21B22B779AA6005C61EC /* ViewControllers */,
+				335D21B12B779A3F005C61EC /* StoryBoards */,
+				335D21AA2B779311005C61EC /* Models */,
+				335D21AD2B77997C005C61EC /* Services */,
+				335D21B32B779AC7005C61EC /* Resources */,
+				335D21B02B779A1D005C61EC /* App */,
 			);
 			path = AppleMusic;
+			sourceTree = "<group>";
+		};
+		335D21AA2B779311005C61EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				335D21AB2B779366005C61EC /* MusicFeed.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		335D21AD2B77997C005C61EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				335D21AE2B779A0C005C61EC /* NetworkManeger.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		335D21B02B779A1D005C61EC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				335D21962B7792D6005C61EC /* AppDelegate.swift */,
+				335D21982B7792D6005C61EC /* SceneDelegate.swift */,
+				335D21A42B7792D9005C61EC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		335D21B12B779A3F005C61EC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				335D219C2B7792D6005C61EC /* Main.storyboard */,
+				335D21A12B7792D9005C61EC /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		335D21B22B779AA6005C61EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				335D219A2B7792D6005C61EC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		335D21B32B779AC7005C61EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				335D219F2B7792D9005C61EC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +195,8 @@
 				335D219B2B7792D6005C61EC /* ViewController.swift in Sources */,
 				335D21972B7792D6005C61EC /* AppDelegate.swift in Sources */,
 				335D21992B7792D6005C61EC /* SceneDelegate.swift in Sources */,
+				335D21AF2B779A0C005C61EC /* NetworkManeger.swift in Sources */,
+				335D21AC2B779366005C61EC /* MusicFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +350,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z9UQ5R875;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppleMusic/Info.plist;
+				INFOPLIST_FILE = AppleMusic/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +364,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DmitryParhomenko.AppleMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +383,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z9UQ5R875;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppleMusic/Info.plist;
+				INFOPLIST_FILE = AppleMusic/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +397,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DmitryParhomenko.AppleMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
